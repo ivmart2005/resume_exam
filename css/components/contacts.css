@@ -1,0 +1,52 @@
+#contacts {
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-layout {
+    opacity: 1;
+}
+
+.contact-message {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 150%;
+    font-size: 14px;
+    gap: 2x;
+}
+
+.contact-email {
+    height: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    line-height: 150%;
+    gap: 8x;
+}
+
+.download-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: var(--font-weight-bold);
+    font-size: 12px;
+    margin-top: 12px;
+    transition: all 0.3s;
+}
+
+.download-btn:hover {
+    background-color: var(--gray-color);
+    color: white;
+    border-color: transparent;
+}
