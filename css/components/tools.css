@@ -1,0 +1,65 @@
+/* tools.css */
+#tools {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+}
+
+.tools-header {
+    width: 79px;
+    height: 21px;
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    left: 10%;
+}
+
+.tools-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.tool-section {
+    background-color: white;
+    border-radius: 6px;
+    position: relative;
+    min-height: 10px;
+    padding: 5px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20px); /* Автозаполнение */
+    justify-content: space-evenly;
+    gap: 5px;
+    align-content: start;
+}
+
+.tool-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.tool-section-title {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 5px;
+    line-height: 11px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+    padding: 0 6px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 59px;
+    height: 11px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

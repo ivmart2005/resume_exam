@@ -1,0 +1,105 @@
+#education {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.education-header {
+    width: 91px;
+    height: 21px;
+    white-space: nowrap;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 116px 116px;
+    grid-template-rows: 120px 96px;
+    gap: 16px;
+}
+
+.education-block {
+    background: white;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.education-block.right-block {
+    grid-column: 2;
+    grid-row: 1;
+    height: 108px;
+    gap: 6px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-block.right-block .education-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.education-block.right-block .education-hashtags {
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.education-block.right-block .education-bottom-title {
+    margin-top: 0;
+    padding-top: 2px;
+}
+
+.education-year {
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-weight-medium);
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: center;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+
+.education-title {
+    font-size: 10px;
+    font-weight: var(--font-weight-medium);
+}
+
+.education-hashtags {
+    font-size: 8px;
+    color: #149063;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.education-bottom-title {
+    font-size: 8px;
+    margin-top: auto;
+}
+
+.education-block:first-child {
+    width: 116px;
+    height: 120px;
+    gap: 8px;
+    background-color: var(--green-color);
+    color: white;
+}
+
+.education-block:first-child .education-year,
+.education-block:first-child .education-title,
+.education-block:first-child .education-hashtags,
+.education-block:first-child .education-bottom-title {
+    color: white;
+}
