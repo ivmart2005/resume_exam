@@ -1,1 +1,1 @@
-# resume_exam
+# cv_exam
