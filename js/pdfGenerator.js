@@ -5,7 +5,7 @@ document.getElementById("download-pdf").addEventListener("click", function () {
     var btn = document.getElementById("download-pdf");
     btn.disabled = true;
 
-    html2canvas(element, { scale: 2 })
+    html2canvas(element, { scale: 2, useCORS: true, logging: true })
         .then(function (canvas) {
             var pdf = new jspdf.jsPDF({
                 orientation: "portrait",
